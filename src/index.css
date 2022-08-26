@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	scroll-behavior: smooth;
+	/* outline: 1px solid red; */
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.container {
+	width: 80%;
+	max-width: 1280px;
+	margin: 5rem auto;
+}
+@media screen and (max-width: 786px) {
+	.container {
+		width: 90%;
+		margin: 2rem auto;
+	}
+}
+
+.text-gradient {
+	background: radial-gradient(
+		64.18% 64.18% at 71.16% 35.69%,
+		#def9fa 0.89%,
+		#bef3f5 17.23%,
+		#9dedf0 42.04%,
+		#90c2ea 55.12%,
+		#6397ea 71.54%,
+		#1e95e5 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+.white__gradient {
+	background: rgba(255, 255, 255, 0.7);
+	filter: blur(750px);
+}
+.blue__gradient {
+	background: linear-gradient(
+		67deg,
+		rgba(132, 132, 247, 0.38) 90%,
+		rgba(193, 149, 243, 0.17) 10%
+	);
+	filter: blur(600px);
+}
