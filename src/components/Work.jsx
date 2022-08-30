@@ -1,8 +1,9 @@
+import { FaGithub } from 'react-icons/fa';
 import styles from '../style/styles';
 import { works } from '../data';
 
 const Work = ({
-  index, image, title, desc, live, code,
+  index, image, title, desc, live, code, preview,
 }) => (
   <div
     className={`w-[200px] xs:w-[255px] h-[400px] max-h-[400px] lg:w-[300px] my-12 ${
@@ -28,9 +29,9 @@ const Work = ({
         href={code}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-center text-gray-700 dark:text-dimWhite py-2 rounded-md border-2 w-full hove:scale-105"
+        className="flex justify-center items-center text-gray-700 dark:text-dimWhite py-2"
       >
-        code
+        {preview && <FaGithub className="bg-inherit w-10 h-10" />}
       </a>
     </div>
   </div>

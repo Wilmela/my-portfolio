@@ -6,20 +6,29 @@
 
 * {
 	scroll-behavior: smooth;
-	/* outline: 1px solid red; */
 }
 
 body {
 	font-family: 'Poppins', sans-serif;
 }
+:focus-visible { outline-offset: 4px; }
+
+::-webkit-scrollbar { width: 5px; }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); } *
+
 .container {
 	width: 80%;
-	max-width: 1280px;
+	max-width: 1024px;
 	margin: 5rem auto;
 }
 @media screen and (max-width: 786px) {
 	.container {
-		width: 90%;
+		/* width: 90%; */
 		margin: 2rem auto;
 	}
 }

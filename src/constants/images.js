@@ -16,6 +16,9 @@ import typescript from '../assets/typescript.png';
 import blogDesktop from '../assets/blogDesktop.png';
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
+import estate from '../assets/estate.png';
+import gym from '../assets/Gym.png';
+import weather from '../assets/weather.png';
 
 const images = {
   css,
@@ -36,6 +39,9 @@ const images = {
   blogDesktop,
   menu,
   close,
+  estate,
+  gym,
+  weather,
 };
 
 export default images;

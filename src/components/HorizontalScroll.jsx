@@ -34,8 +34,9 @@ const HorizontalScroll = () => (
         image={work.image}
         title={work.title}
         desc={work.desc}
-        live={work.preview ? work.live : 'Not live'}
+        live={work.live}
         code={work.code}
+        preview={work.preview}
       />
     ))}
   </ScrollMenu>

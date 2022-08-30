@@ -46,13 +46,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row py-4">
+    <div className="flex flex-col md:flex-row pb-4 container">
       <div className={`${styles.flexColCenter} md:mr-12 mb-8`}>
-        <p data-aos="fade-up" className={`dark:text-gray-400 ${styles.paragraph}`}>
+        <p data-aos="fade-up" className={`dark:text-gray-400  ${styles.paragraph}`}>
           Please, fill out the form in this section. Or place a call between
           8:00a.m. and 7:00p.m. Monday through Friday
         </p>
-        <div className={`w-full ${styles.flexColStart} mt-[20px]`}>
+        <div className="w-full mt-[20px]">
           <span data-aos="fade-right" className={styles.contactIconWrapper}>
             <BiCurrentLocation className={`${styles.contactIcon}`} />
             <p>Port Harcourt, Nigeria</p>
@@ -66,7 +66,7 @@ const Contact = () => {
           <span data-aos="fade-right" className={styles.contactIconWrapper}>
             <MdEmail className={`${styles.contactIcon}`} />
             <a href="mailto:chukumelawilson@gmail.com">
-              <p>chukumelawilson@gmail.com</p>
+              <p>wilmela2@gmail.com</p>
             </a>
           </span>
         </div>
@@ -114,6 +114,7 @@ const Contact = () => {
         </button>
       </form>
     </div>
+
   );
 };
 

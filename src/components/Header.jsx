@@ -33,7 +33,7 @@ const Header = () => (
           data-aos="fade-right"
           src={images.passport}
           alt="MELA"
-          className="md:w-[300px] md:h-[350px] w-[170px] h-[200px]
+          className="md:w-[300px] md:h-[350px] w-[170px] h-[250px]
               object-cover z-[5]"
         />
         <div className="absolute z-[0] w-[30%] h-[35%] white__gradient" />
