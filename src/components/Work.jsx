@@ -11,7 +11,7 @@ const Work = ({
     } max-h-[350px] ${styles.flexColCenter} p-4
     dark:border-[0.01px] dark:border-blue dark:border-opacity-[0.25]  rounded-md shadow-md hover:scale-105 cursor-pointer bg-[#fafafa] dark:bg-gradient-to-r from-primary2 to-gray-900`}
   >
-    <a href={live} target="_blank" rel="noopener noreferrer">
+    <a href={preview && live} target="_blank" rel="noopener noreferrer">
       <div className="pb-4">
         <img src={image} alt="project" className="max-h-[250px] w-full" />
       </div>
@@ -31,7 +31,7 @@ const Work = ({
         rel="noopener noreferrer"
         className="flex justify-center items-center text-gray-700 dark:text-dimWhite py-2"
       >
-        {preview && <FaGithub className="bg-inherit w-10 h-10" />}
+        <FaGithub className="bg-inherit w-10 h-10" />
       </a>
     </div>
   </div>
