@@ -1,15 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { HiX, HiMenu } from 'react-icons/hi';
 import styles from '../style/styles';
 import { navLinks } from '../data';
 import RESUME from '../assets/blogDesktop.png';
 
-function Navbar({ darkTheme, setDarkTheme }) {
+function Navbar({
+  darkTheme, setDarkTheme, visible, setVisible,
+}) {
   const [toggle, setToggle] = useState(false);
   const [isActive, setIsActive] = useState('Home');
 
+  const handleScroll = useCallback(() => {
+    if (window.scrollY > 100) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  }, [setVisible]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [visible, handleScroll]);
+
   return (
-    <nav className="w-full p-4 md:px-16 z-10 flex justify-between items-center  lg:justify-between bg-white md:bg-[#fafafa] dark:bg-primary">
+    <nav className={`${visible && 'showHeader'}  w-full p-4 md:px-16 z-10 flex justify-between items-center lg:justify-between bg-white md:bg-[#fafafa] dark:bg-primary`}>
 
       <div className="md:hidden">
         {toggle ? (

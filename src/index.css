@@ -60,3 +60,15 @@ body {
 	);
 	filter: blur(600px);
 }
+
+.showHeader {
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}

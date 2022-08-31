@@ -11,7 +11,7 @@ const Work = ({
     } max-h-[350px] ${styles.flexColCenter} p-4
     dark:border-[0.01px] dark:border-blue dark:border-opacity-[0.25]  rounded-md shadow-md hover:scale-105 cursor-pointer bg-[#fafafa] dark:bg-gradient-to-r from-primary2 to-gray-900`}
   >
-    <a href={preview && live} target="_blank" rel="noopener noreferrer">
+    <a href={preview ? live : undefined} target="_blank" rel="noopener noreferrer">
       <div className="pb-4">
         <img src={image} alt="project" className="max-h-[250px] w-full" />
       </div>

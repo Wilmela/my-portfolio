@@ -26,7 +26,7 @@ const Footer = () => {
         </p>
       </div>
       <div
-        className={` ${styles.flexColCenter} w-full h-[250px] text-primary bg-gray-400 dark:text-gray-400 text-lg dark:bg-primary2 mt-8`}
+        className={` ${styles.flexColCenter} w-full h-[250px] md:h-[350px] text-primary bg-gray-400 dark:text-gray-400 text-lg dark:bg-primary2 mt-8`}
       >
         <a href="https://github.com/Wilmela/my-portfolio" target="_blank" rel="noopener noreferrer">
           &copy;

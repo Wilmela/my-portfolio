@@ -26,13 +26,13 @@ const About = () => (
       <Skills />
       <p
         data-aos="fade-right"
-        className="w-full my-4 md:mb-6 md:mt-8 md:text-start
-         text-center font-normal text-black dark:text-gray-400 text-xl"
+        className="w-full my-4 md:mb-6 md:mt-8 text-start
+         font-normal text-black dark:text-gray-400 text-xl"
       >
         Do you need your job completed in an elegant fashion?
       </p>
 
-      <span className="mt-12 md:my-6 md:self-start">
+      <span className="mt-12 md:my-6 self-start">
         <Button title="Reach Me" href="#contact" />
       </span>
     </div>

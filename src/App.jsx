@@ -13,6 +13,7 @@ const App = () => {
   }, []);
 
   const [darkTheme, setDarkTheme] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   return (
     <div className={`w-full overflow-hidden ${darkTheme ? 'dark' : ''}`}>
@@ -28,10 +29,10 @@ const App = () => {
 
       <div className="bg-[#fafafa] dark:bg-primary dark:text-white">
 
-        <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+        <Navbar darkTheme={darkTheme} visible={visible} setVisible={setVisible} setDarkTheme={setDarkTheme} />
 
         <div className="container">
-          <Header />
+          <Header visible={visible} />
         </div>
 
         <div className={`w-full bg-[#eee] ${styles.flexCenter} dark:bg-transparent`}>
@@ -45,7 +46,7 @@ const App = () => {
         </div>
 
         <div className="w-full bg-[#eee] dark:bg-primary">
-          <Footer />
+          <Footer visible={visible} />
         </div>
       </div>
     </div>
