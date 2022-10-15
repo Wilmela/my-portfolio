@@ -10,6 +10,24 @@ export const navLinks = [
 export const works = [
   {
     id: 1,
+    image: images.ogcoinmini,
+    title: 'OGCOIN-MINI',
+    desc: 'Built with Reactjs, Tailwindcss and Redux Toolkit',
+    live: 'https://ogcoin-mini.netlify.app/',
+    code: 'https://github.com/Wilmela/ogcoin_mini',
+    preview: true,
+  },
+  {
+    id: 2,
+    image: images.buyMeACoffee,
+    title: 'BUY ME A COFFEE DE-FI',
+    desc: 'Built with Reactjs, Solidity and Hardhat',
+    live: 'https://github.com/Wilmela/buyMeACoffee_De-fi',
+    code: 'https://github.com/Wilmela/buyMeACoffee_De-fi',
+    preview: false,
+  },
+  {
+    id: 3,
     image: images.estate,
     title: 'REALESTATE',
     desc: 'Built with Nextjs and Chakra-UI',
@@ -18,7 +36,7 @@ export const works = [
     preview: true,
   },
   {
-    id: 2,
+    id: 4,
     image: images.gym,
     title: 'KEEP FIT',
     desc: 'Built with React.js and material-UI',
@@ -27,7 +45,7 @@ export const works = [
     preview: true,
   },
   {
-    id: 3,
+    id: 5,
     image: images.weather,
     title: 'F-CASTER',
     desc: 'Built with React.js, Css and Framer Motion',
@@ -36,7 +54,7 @@ export const works = [
     preview: true,
   },
   {
-    id: 4,
+    id: 6,
     image: images.blogDesktop,
     title: 'Blogger',
     desc: 'Built with React.js, mongoDB and express.js.',

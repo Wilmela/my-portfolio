@@ -19,6 +19,8 @@ import close from '../assets/close.svg';
 import estate from '../assets/estate.png';
 import gym from '../assets/Gym.png';
 import weather from '../assets/weather.png';
+import ogcoinmini from '../assets/ogcoinmini.png';
+import buyMeACoffee from '../assets/buyMeACoffe.png';
 
 const images = {
   css,
@@ -42,6 +44,8 @@ const images = {
   estate,
   gym,
   weather,
+  ogcoinmini,
+  buyMeACoffee,
 };
 
 export default images;
