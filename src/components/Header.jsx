@@ -20,7 +20,7 @@ const Header = () => (
           <h3 className="text-3xl mt-2 md:mt-0 md:text-6xl text-blue dark:text-white font-bold">
             Mela Wilson
           </h3>
-          <p className="text-xl md:text-2xl dark:text-gray-400 md:pb-0 md:text-start font-normal my-4 text-center">
+          <p className="text-xl md:text-2xl dark:text-gray-400 md:pb-0 md:text-start font-normal my-4 text-center leading-[35px]">
             Fullstack web, mobile and blockchain developer.
           </p>
         </div>
