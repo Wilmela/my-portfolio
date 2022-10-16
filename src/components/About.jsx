@@ -27,7 +27,7 @@ const About = () => (
       <p
         data-aos="fade-right"
         className="w-full my-4 md:mb-6 md:mt-8 text-start
-         font-normal text-black dark:text-gray-400 text-xl"
+         font-normal text-black dark:text-gray-400 text-xl leading-2"
       >
         Do you need your job completed in an elegant fashion?
       </p>

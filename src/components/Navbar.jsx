@@ -26,7 +26,7 @@ function Navbar({
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [visible, handleScroll]);
+  }, [handleScroll]);
 
   return (
     <>
@@ -35,6 +35,8 @@ function Navbar({
           visible && 'showHeader'
         }  w-full p-4 md:px-16 z-10 flex justify-between items-center lg:justify-between bg-white md:bg-[#fafafa] dark:bg-primary`}
       >
+
+        {/* Toggle icons */}
         <div className="md:hidden">
           {toggle ? (
             <HiX
@@ -60,7 +62,7 @@ function Navbar({
               className={`${
                 !toggle ? 'hidden' : 'flex'
               } w-[80%] h-screen pt-4 px-8 absolute top-[60px]
-            left-0 bg-gray-300 dark:bg-primary2 shadow-md z-10 rounded-sm`}
+            left-0 bg-gray-200 dark:bg-primary2 shadow-md z-10 rounded-sm`}
             >
               <ul className={`w-full h-full ${styles.flexColCenter}`}>
                 {navLinks.map((item, index) => (

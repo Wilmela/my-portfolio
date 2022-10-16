@@ -20,7 +20,7 @@ export const works = [
   {
     id: 2,
     image: images.buyMeACoffee,
-    title: 'BUY ME A COFFEE DE-FI',
+    title: 'TIP ME DE-FI',
     desc: 'Built with Reactjs, Solidity and Hardhat',
     live: 'https://github.com/Wilmela/buyMeACoffee_De-fi',
     code: 'https://github.com/Wilmela/buyMeACoffee_De-fi',
@@ -56,7 +56,7 @@ export const works = [
   {
     id: 6,
     image: images.blogDesktop,
-    title: 'Blogger',
+    title: 'BLOGGER',
     desc: 'Built with React.js, mongoDB and express.js.',
     live: 'Go live',
     code: 'https://github.com/Wilmela/blog',
