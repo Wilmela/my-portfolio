@@ -10,7 +10,7 @@ const styles = {
   headerText: 'text-start w-full text-4xl text-gradient font-bold md:mb-12 mb-8',
   paragraph: 'font-regular text-black dark:text-gray-400 text-xl py-4 leading-[35px] text-start',
 
-  socialStyle: 'flex text-white justify-center items-center sm:text-xl sm:w-10 sm:h-10 w-8 h-8 text-sm rounded-full border-2 bg-blue hover:shadow-md hover:bg-[#4296df] cursor-pointer',
+  socialStyle: 'flex text-white justify-center items-center sm:text-xl sm:w-10 sm:h-10 w-8 h-8 text-sm rounded-full border-2 bg-blue hover:shadow-md hover:bg-[#4296df] cursor-pointer ease-in duration-300',
   inputStyle: 'w-[100%] p-2 text-gray-400 focus:outline-none my-4 hover:bg-[#fafafa]',
   formLabel: 'text-primary dark:text-dimWhite',
 

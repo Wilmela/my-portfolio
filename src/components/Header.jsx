@@ -13,7 +13,7 @@ const Header = () => (
         data-aos="fade-left"
         className={`${styles.flexColCenter} md:justify-start md:items-start m-4`}
       >
-        <p className="text-lg my-2 font-medium md:pb-6 text-accent2 dark:text-gray-400">
+        <p className="text-lg my-2 md:pb-6 text-accent2 dark:text-gray-400 font-light">
           Hi, I'm
         </p>
         <div className={`${styles.flexColCenter} md:items-start`}>

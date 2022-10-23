@@ -50,7 +50,7 @@ const Contact = () => {
       <div className={`${styles.flexColCenter} md:mr-12 mb-8`}>
         <p data-aos="fade-up" className={`dark:text-gray-400  ${styles.paragraph}`}>
           Please, fill out the form in this section. Or place a call between
-          8:00a.m. and 7:00p.m. Monday through Friday
+          8:00a.m. and 7:00p.m. Monday through Saturday.
         </p>
         <div className="w-full mt-[20px]">
           <span data-aos="fade-right" className={styles.contactIconWrapper}>
