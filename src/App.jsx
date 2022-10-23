@@ -35,7 +35,7 @@ const App = () => {
           <Header visible={visible} />
         </div>
 
-        <div className={`w-full bg-[#eee] ${styles.flexCenter} dark:bg-transparent`}>
+        <div className={`w-full bg-[#eee] dark:bg-[rgba(0,0,0,0.1)] ${styles.flexCenter} dark:bg-transparent`}>
           <div className="container">
             <Works />
           </div>
