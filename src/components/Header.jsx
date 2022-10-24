@@ -13,14 +13,14 @@ const Header = () => (
         data-aos="fade-left"
         className={`${styles.flexColCenter} md:justify-start md:items-start m-4`}
       >
-        <p className="text-lg my-2 md:pb-6 text-accent2 dark:text-gray-400 font-light">
+        <p className={`text-lg my-2 md:pb-6 text-accent2 dark:text-gray-400 font-light ${styles.textColor}`}>
           Hi, I'm
         </p>
         <div className={`${styles.flexColCenter} md:items-start`}>
           <h3 className="text-3xl mt-2 md:mt-0 md:text-6xl text-blue dark:text-white font-bold">
             Mela Wilson
           </h3>
-          <p className="text-xl md:text-2xl dark:text-gray-400 md:pb-0 md:text-start font-normal my-4 text-center leading-[35px]">
+          <p className={`text-xl  md:text-2xl dark:text-gray-400 md:pb-0 md:text-start font-normal my-4 text-center leading-[35px] ${styles.textColor}`}>
             Fullstack web, mobile and blockchain developer.
           </p>
         </div>

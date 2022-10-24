@@ -28,6 +28,15 @@ function Navbar({
     };
   }, [handleScroll]);
 
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [toggle]);
+
   return (
     <>
       <nav
@@ -41,7 +50,7 @@ function Navbar({
           {toggle ? (
             <HiX
               size={32}
-              className="text-blue dark:text-dimWhite cursor-pointer"
+              className="text-blue dark:text-dimWhite cursor-pointer animate-spin"
               cursor="pointer"
               onClick={() => setToggle(false)}
             />
@@ -59,9 +68,7 @@ function Navbar({
             {toggle && (
             <div
               data-aos="fade-right"
-              className={`${
-                !toggle ? 'hidden' : 'flex'
-              } w-[80%] h-screen pt-4 px-8 absolute top-[60px]
+              className={` w-[80%] h-screen px-10 absolute top-[63px]
             left-0 bg-gray-200 dark:bg-primary2 shadow-md z-10 rounded-sm`}
             >
               <ul className={`w-full h-full ${styles.flexColCenter}`}>
@@ -75,10 +82,11 @@ function Navbar({
                     }}
                     className={`m-6 ${styles.navText} ${
                       isActive === item.title
-                        ? 'border-b-2 border-secondary dark:border-gray-400'
+                        ? 'text-gray-700 dark:text-blue'
                         : ''
-                    }`}
+                    } w-full flex justify-start items-center gap-2`}
                   >
+                    {item.icon}
                     {item.title}
                   </a>
                 ))}
@@ -96,7 +104,6 @@ function Navbar({
               href={`#${item.id}`}
               onClick={() => {
                 setIsActive(item.title);
-                setToggle((prev) => !prev);
               }}
               className={`mr-8 ${styles.navText} ${
                 isActive === item.title ? 'border-b-2 border-gray-400' : ''
@@ -121,7 +128,7 @@ function Navbar({
         </div>
       </nav>
       {visible && (
-      <button className="fixed bottom-[20px] right-[20px] w-10 h-10 rounded-full flex items-center justify-center bg-blue text-white dark:hover:bg-white dark:hover:text-blue z-50" type="button" onClick={scrollToTop}>
+      <button className="fixed bottom-[20px] right-[20px] w-10 h-10 rounded-full flex items-center justify-center bg-blue text-white dark:hover:bg-white dark:hover:text-blue z-50 ease-in duration-300" type="button" onClick={scrollToTop}>
         &#8679;
       </button>
       )}

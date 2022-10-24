@@ -55,18 +55,18 @@ const Contact = () => {
         <div className="w-full mt-[20px]">
           <span data-aos="fade-right" className={styles.contactIconWrapper}>
             <BiCurrentLocation className={`${styles.contactIcon}`} />
-            <p>Port Harcourt, Nigeria</p>
+            <p className={`${styles.textColor} dark:text-gray-400`}>Port Harcourt, Nigeria</p>
           </span>
           <span data-aos="fade-right" className={styles.contactIconWrapper}>
             <BsTelephoneFill className={`${styles.contactIcon}`} />
             <a href="tel:+2340838888192">
-              <p>+234 803 8888 192</p>
+              <p className={`${styles.textColor} dark:text-gray-400`}>+234 803 8888 192</p>
             </a>
           </span>
           <span data-aos="fade-right" className={styles.contactIconWrapper}>
             <MdEmail className={`${styles.contactIcon}`} />
             <a href="mailto:chukumelawilson@gmail.com">
-              <p>wilmela2@gmail.com</p>
+              <p className={`${styles.textColor} dark:text-gray-400`}>wilmela2@gmail.com</p>
             </a>
           </span>
         </div>
@@ -107,7 +107,7 @@ const Contact = () => {
           />
         </label>
         <button
-          className="w-full py-2 mt-4 px-4 text-white bg-blue border-none hover:bg-[#4296df]"
+          className="w-full py-2 mt-4 px-4 text-white bg-blue border-none hover:bg-[#4296df] ease-in duration-300"
           type="submit"
         >
           Send

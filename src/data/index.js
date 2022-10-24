@@ -1,10 +1,17 @@
+import {
+  FaHome, FaFolder, FaInfo, FaAddressBook,
+} from 'react-icons/fa';
 import { images } from '../constants';
 
+const icon = {
+  iconStyle: 'dark:text-gray-400 text-xl',
+};
+
 export const navLinks = [
-  { id: 'home', title: 'Home' },
-  { id: 'works', title: 'Works' },
-  { id: 'about', title: 'About' },
-  { id: 'contact', title: 'Contact' },
+  { id: 'home', title: 'Home', icon: <FaHome className={icon.iconStyle} /> },
+  { id: 'works', title: 'Works', icon: <FaFolder className={icon.iconStyle} /> },
+  { id: 'about', title: 'About', icon: <FaInfo className={icon.iconStyle} /> },
+  { id: 'contact', title: 'Contact', icon: <FaAddressBook className={icon.iconStyle} /> },
 ];
 
 export const works = [
@@ -30,7 +37,7 @@ export const works = [
     id: 3,
     image: images.estate,
     title: 'REALESTATE',
-    desc: 'Built with Nextjs and Chakra-UI',
+    desc: 'Built with Nextjs and Chakra-UI powered by BayutAPI',
     live: 'https://r-estate.vercel.app/',
     code: 'https://github.com/Wilmela/realestate',
     preview: true,
